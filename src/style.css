@@ -1,0 +1,106 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    --clr-bg: #242424;
+    --clr-fg: rgba(255, 255, 255, 0.87);
+    --clr-fg-a: #b6d0f7;
+    --clr-fg-a-hover: #dff37b;
+    --clr-bg-button: #1a1a1a;
+    --clr-bg-card: #1a2a2a;
+}
+
+body {
+    background-color: var(--clr-bg-light, var(--clr-bg));
+    color: var(--clr-fg-light, var(--clr-fg));
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+a {
+    font-weight: 500;
+    color: var(--clr-fg-a-light, var(--clr-fg-a));
+    text-decoration: inherit;
+    transition: color 1s ease-out;
+}
+
+a:hover {
+    color: var(--clr-fg-a-hover-light, var(--clr-fg-a-hover));
+    transition: color 100ms ease-in;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin: 0;
+}
+
+p {
+    max-width: 65ch;
+}
+
+h1,
+h2,
+p {
+    color: var(--clr-fg-light, clr-fg);
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--clr-bg-button-light, var(--clr-bg-button));
+    cursor: pointer;
+    transition: border-color 1s ease-out;
+}
+
+button:hover {
+    border-color: var(--clr-fg-a-hover-light, var(--clr-fg-a-hover));
+    transition: border-color 100ms ease-in;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+    padding: 2em;
+}
+
+#app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+     :root {
+        color: #213547;
+        background-color: #ffffff;
+        --clr-fg-light: var(--clr-bg);
+        --clr-bg-light: var(--clr-fg);
+        --clr-bg-card-light: #f0f4f4;
+        --clr-fg-a-light: var(--clr-fg-light);
+        --clr-fg-a-hover-light: rgb(122, 150, 0);
+    }
+    a {}
+    button {
+        --clr-bg-button-light: #c2c2c2;
+        color: inherit;
+    }
+}
