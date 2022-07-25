@@ -50,8 +50,8 @@ const fetchDetails = async () => {
 
 <template>
   <div class="container">
-    <h1>Let's start using Vue</h1>
-    <h2>to view your WordPress for you</h2>
+    <h1>ChristinaNeal</h1>
+    <h2>Writer, Editor, Music Manager, Fitness Fan</h2>
     <div class="data-area">
       <button v-if="!isShowing.posts" @click="fetchPosts">Fetch posts</button>
       <div v-else>
